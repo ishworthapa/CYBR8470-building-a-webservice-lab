@@ -34,6 +34,8 @@ services:
   db:
     restart: always
     image: postgres
+    environment:
+      POSTGRES_PASSWORD: d4t4b45e
     volumes:
       - postgres-config:/etc/postgresql
       - postgres-data:/var/lib/postgresql/data
